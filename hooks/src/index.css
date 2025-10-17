@@ -1,1 +1,45 @@
 @import "tailwindcss";
+
+body{
+    color: #212121;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+}
+
+button{
+    padding: 10px 30px;
+    margin:30px ;
+    background: #212121;
+    color: #fff;
+    border-radius: 10px;
+transition: background-color 0.4s ease-in-out;
+cursor: pointer;
+}
+
+h1{
+    padding: 20px 50px;
+    background-color: gray;
+    width: 300px;
+    margin: 30px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+button:hover{
+    background-color: #535050;
+    
+}
+
+input{
+    border: 2px solid #212121;
+    margin-left: 30px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}

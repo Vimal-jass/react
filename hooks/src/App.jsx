@@ -1,18 +1,18 @@
-import {useState }from 'react'
-
-
+import React from 'react'
+import Login from './component/Login'
+import SetNum from './component/SetNum'
+import Counter from './component/Counter'
+import Part1 from './component/usestate advance/Part1'
+import Form from './component/form/Form'
 
 const App = () => {
-  
-
-
   return (
-
     <>
-<h1>your number is {first}</h1>
-<button>click</button>
+
+  <Form />
+
+
     </>
-   
   )
 }
 
