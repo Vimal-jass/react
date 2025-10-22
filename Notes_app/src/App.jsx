@@ -10,12 +10,24 @@ const App = () => {
  const [Notes, setNotes] = useState('')
  const [description, setdescription] = useState('')
  const [Tasks, setTasks] = useState([])
+ const [Message, setMessage] = useState('')
 
  const formHandler = (e)=>{
   e.preventDefault()
+  if(Notes.trim()==="" || description.trim()=== ""){
+    setMessage("plz filled all inputs")
+
+    
+ return;
+ 
+  }
+
   // console.log("form Submitted", Notes , description)
   const copyTask = [...Tasks];
   copyTask.push({Notes, description})
+
+
+
 
 
   // console.log(copyTask)
@@ -76,6 +88,8 @@ onSubmit={(e)=>{
          />
 
          <button className='bg-white w-full text-black px-5 py-2 rounded'>Add Now</button>
+               <p className="mt-3 text-lg font-semibold text-red-500">{Message}</p>
+
       </form>
 
       <div className=' pl-20 bg-gray-900 lg:w-1/2 flex-wrap p-10'>
@@ -101,3 +115,4 @@ return <div key={idx} className=' flex flex-col   h-52 w-45 text-black p-2 round
 }
 
 export default App
+
